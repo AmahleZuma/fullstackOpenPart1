@@ -37,6 +37,32 @@ function Total(props) {
 function App() {
   const [count, setCount] = useState(0)
 
+  //Objects
+  const profile1 = {
+    name: "Percy",
+    camp: "Camp Half Blood",
+    parent: "Poseidon"
+  }
+
+  const profile2 = {
+    name: "Jason",
+    camp: "Camp Jupiter",
+    parent: "Jupiter"
+  }
+  const profile3 = {
+    name: "Magnus",
+    camp: "Hotel Valhalla",
+    parent: "Frey"
+  }
+
+  const profiles = [profile1, profile2, profile3]
+
+  profiles.forEach((profile) => {
+    console.log(profile.name)
+    console.log(profile.camp)
+    console.log(profile.parent)
+  })
+
   // Arrays
   const fruits = ['apples', 'pears', 'bananas', 'jfruit', 'dfruit'];
 
