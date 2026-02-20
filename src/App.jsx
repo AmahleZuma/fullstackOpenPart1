@@ -55,13 +55,32 @@ function App() {
     parent: "Frey"
   }
 
-  const profiles = [profile1, profile2, profile3]
+  // const profiles = [profile1, profile2, profile3]
 
-  profiles.forEach((profile) => {
-    console.log(profile.name)
-    console.log(profile.camp)
-    console.log(profile.parent)
+  // profiles.forEach((profile) => {
+  //   console.log(profile.name)
+  //   console.log(profile.camp)
+  //   console.log(profile.parent)
+  // })
+
+  const names = [profile1.name, profile2.name, profile3.name]
+  const camps = [profile1.camp, profile2.camp, profile3.camp]
+  const parents = [profile1.parent, profile2.parent, profile3.parent]
+
+  // printing out the ordered way
+  names.forEach((name) => {
+    console.log(name)
   })
+
+  camps.forEach((camp) => {
+    console.log(camp)
+  })
+  
+  parents.forEach((parent) => {
+    console.log(parent)
+  })
+
+  const orderedArray = [names, camps, parents]
 
   // Arrays
   const fruits = ['apples', 'pears', 'bananas', 'jfruit', 'dfruit'];
