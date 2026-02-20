@@ -37,11 +37,24 @@ function Total(props) {
 function App() {
   const [count, setCount] = useState(0)
 
-  const fruits = ['apples', 'pears', 'bananas'];
+  // Arrays
+  const fruits = ['apples', 'pears', 'bananas', 'jfruit', 'dfruit'];
+
+  const [first, second, ...rest]  = fruits
+
+  console.log(first)
+  console.log(second)
+  console.log(rest)
 
   fruits.forEach((fruit) => {
     console.log(fruit)
   })
+
+  const fruits2 = fruits.map(value => '<p>' + value + '</p>');
+  fruits2.forEach((fruit2) => {
+    console.log(fruit2)
+  })
+
 
   const course = 'Half Stack application development'
   // Creating Objects
