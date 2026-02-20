@@ -68,19 +68,22 @@ function App() {
   const parents = [profile1.parent, profile2.parent, profile3.parent]
 
   // printing out the ordered way
-  names.forEach((name) => {
-    console.log(name)
-  })
+  // names.forEach((name) => {
+  //   console.log(name)
+  // })
 
-  camps.forEach((camp) => {
-    console.log(camp)
-  })
+  // camps.forEach((camp) => {
+  //   console.log(camp)
+  // })
   
-  parents.forEach((parent) => {
-    console.log(parent)
-  })
+  // parents.forEach((parent) => {
+  //   console.log(parent)
+  // })
 
   const orderedArray = [names, camps, parents]
+  orderedArray.forEach((element) => {
+    console.log(element)
+  })
 
   // Arrays
   const fruits = ['apples', 'pears', 'bananas', 'jfruit', 'dfruit'];
