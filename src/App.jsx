@@ -36,6 +36,13 @@ function Total(props) {
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const fruits = ['apples', 'pears', 'bananas'];
+
+  fruits.forEach((fruit) => {
+    console.log(fruit)
+  })
+
   const course = 'Half Stack application development'
   // Creating Objects
   const part1 = {
