@@ -37,6 +37,7 @@ function Total(props) {
 function App() {
   const [count, setCount] = useState(0)
   const course = 'Half Stack application development'
+  // Creating Objects
   const part1 = {
     name: 'Fundamentals of React',
     exercises: 10
