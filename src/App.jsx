@@ -12,11 +12,21 @@ function App() {
     {name: 'State of a component', exercises: 14}
   ]
   
-  const campProfiles = {
-    {name: 'Percy', parent: 'Poseidon', camp: 'Half Blood',},
-    // {name:, parent:, camp:,},
-    // {name:, parent:, camp:,},
-  }
+  const campProfiles = [
+    {name: 'Percy', parent: 'Poseidon', camp: 'Half Blood', bar:5},
+    {name: 'Jason', parent: 'Jupiter', camp:'Jupiter', bar:5},
+    {name: 'Thalia', parent: 'Zeus', camp:'Half Blood', bar:4},
+    {name:'Nico', parent:'Hades', camp:'Half Blood', bar:4},
+    {name:'Magnus', parent:'Frey', camp:'Hotel Valhalla', bar:4},
+    {name:'Carter', parent:'Julius', camp:'Brooklyn House', bar:4},
+    {name: 'Leo', parent:'Hephaestus', camp:'Half Blood', bar:4}
+    {name:'Annabeth', parent:'Athena', camp:'Half Blood', bar:3},
+    {name:'Luke', parent:'Hermes', camp:'Half Blood', bar:3},
+    {name:'Sadie', parent:'Julius', camp:'Brooklyn House', bar:3},
+    {name:'Alex', parent:'Loki', camp:'Hotel Valhalla', bar:3},
+    {name: 'Frank', parent:'Mars', camp:'Jupiter', bar:3},
+    
+  ]
 
 
 
@@ -44,13 +54,7 @@ function Header(props) {
   );
 };
 
-function Part(props) {
-  console.log(props)
-  return(
-    <p>{props.parts.name} {props.parts.exercises}</p>
-  )
-}
-
+// Subjects and pints
 function Content(props) {
   console.log(props)
   return (
@@ -63,6 +67,15 @@ function Content(props) {
   
   );
 }
+
+function Part(props) {
+  console.log(props)
+  return(
+    <p>{props.parts.name} {props.parts.exercises}</p>
+  )
+}
+
+
 
 function Total(props) {
   return (
