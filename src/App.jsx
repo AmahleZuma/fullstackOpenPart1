@@ -35,9 +35,9 @@ function App() {
   return (
     <>
     <div>
-      <Header course={course}/>
+      <Header title={course}/>
       <Content session={course}/>
-      {/* <Total parts={course}/> */}
+      <Total number={course}/>
 
     </div>
     
@@ -51,7 +51,7 @@ function App() {
 
 function Header(props) {
   return(
-    <h1>{props.course.name}</h1>
+    <h1>{props.title.name}</h1>
   );
 };
 
@@ -77,11 +77,11 @@ function Part(props) {
 
 
 
-// function Total(props) {
-//   return (
-//     <p>Number of exercises {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}</p>
-//   )
-// }
+function Total(props) {
+  return (
+    <p>Number of exercises {props.number.parts[0].exercises + props.number.parts[1].exercises + props.number.parts[2].exercises}</p>
+  )
+}
 
 
 
