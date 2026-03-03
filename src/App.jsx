@@ -27,7 +27,20 @@ function App() {
       ]
   };
 
+  const character = 
+  {
+    name: "Andre",
+    parent: "Hades",
+    age: 16,
+    House: "House of Hades",
+    Specialty: "Miasma",
+    Weapon: "Mimikos",
+    Declare: function () {
+      console.log(`${this.name} is ${this.age}, the son of ${this.parent}. His specialty is ${this.Specialty}`)
+    }
+  }
 
+  character.Declare()
 
 
 
