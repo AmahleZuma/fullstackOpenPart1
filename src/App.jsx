@@ -35,13 +35,21 @@ function App() {
     House: "House of Hades",
     Specialty: "Miasma",
     Weapon: "Mimikos",
-    Declare: function () {
-      console.log(`${this.name} is ${this.age}, the son of ${this.parent}. His specialty is ${this.Specialty}`)
-    }
-  }
+    Declare: function () 
+    {
+      console.log(`${this.age}`)
+    },
+    doAddition: function(a,b) 
+    {
+      console.log(a + b)
+    },
+  };
 
-  character.Declare()
+  character.Declare();
 
+  const declaration = character.Declare.bind(character);
+
+  declaration()
 
 
 
