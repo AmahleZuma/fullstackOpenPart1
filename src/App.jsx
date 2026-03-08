@@ -3,6 +3,27 @@ import { useState } from 'react'
 function App() {
   const [count, setCount] = useState(0)
 
+  // This is a character class
+  class Character {
+    constructor(age, name, parent, main) 
+    {
+      this.age = age;
+      this.name = name;
+      this.parent = parent;
+      this.main = main;
+    };
+
+    // This is a method I believe
+    Profile() 
+    {
+      console.log(`Welcome ${this.name} son of ${this.parent}. According to your file you are ${this.age} years old and your main is...${this.main}. This is perfect!`);
+    };
+  }
+
+  // I think this is an instance or an object
+  const Andre = new Character(16, "Andre", "Hades", "Miasma");
+  Andre.Profile()
+
 
   const course = { 
     
@@ -44,12 +65,6 @@ function App() {
       console.log(a + b)
     },
   };
-
-  character.Declare();
-
-  const declaration = character.Declare.bind(character);
-
-  declaration()
 
 
 
