@@ -18,11 +18,20 @@ function App() {
     {
       console.log(`Welcome ${this.name} son of ${this.parent}. According to your file you are ${this.age} years old and your main is...${this.main}. This is perfect!`);
     };
+
+    // Second method
+    Profile2 ()
+    {
+      console.log(`Welcome ${this.name} daughter of ${this.parent}. According to your file you are ${this.age} years old and your main is...${this.main}. This is perfect!`);
+    }
   }
 
   // I think this is an instance or an object
   const Andre = new Character(16, "Andre", "Hades", "Miasma");
   Andre.Profile()
+
+  const Tina = new Character(26, "Tina", "Zeus", "Aerokenises");
+  Tina.Profile2()
 
 
   const course = { 
@@ -93,7 +102,6 @@ function Header(props) {
 
 // Subjects and pints
 function Content(props) {
-  console.log(props)
   return (
     <div>
         <Part  part={props.session.parts[0]}/>
